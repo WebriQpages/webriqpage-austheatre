@@ -1,17 +1,73 @@
-.container
-	.navbar-header
-		button.navbar-toggle.collapsed(data-target='#bs-example-navbar-collapse-1', data-toggle='collapse', type='button')
-			span.sr-only Toggle navigation
-			span.icon-bar
-			span.icon-bar
-			span.icon-bar
-		a.navbar-brand.page-scroll(href='/')
-			img(src= records.site.sitedata[0].logo)
-	#bs-example-navbar-collapse-1.collapse.navbar-collapse
-		ul.nav.navbar-nav.navbar-right
-			li
-				a.page-scroll(href='/') Home
-			- each menuitem in records.menu.result
-				li
-					a.page-scroll(href= menuitem.url)= menuitem.item
+.banner.text-center
+	.container
+		.row
+			.col-md-12
+				h4 WE PROVIDE YOU
+				h5 The most efficient. The cost effective solution to your cinema and live theatre requirements.
+				a.button.btn-default.eq-ui-waves VIEW PRODUCTS
+.services.text-center
+	.row
+		.top-services
+			.col-md-12.service-padding.service-border
+				.col-md-3
+					img(src='img/consultancy.png').image-responsive
+					h6 Consultancy
+					p Live theatre, Cinema design, Fit out
+				.col-md-3
+					img(src='img/supply-installation.png').image-responsive
+					h6 Supply / Installation
+					p Lighting, Audio for schools, Public halls, Live theatre
+				.col-md-3
+					img(src='img/digital-projector.png').image-responsive
+					h6 Digital Projector
+					p Digital cinema projector supply and installation
+				.col-md-3
+					img(src='img/screen-audio.png').image-responsive
+					h6 Screen / Audio
+					p Cinema screens and audio supply and installation
+	.row
+		.bottom-services
+			.col-md-12.service-padding.service-border
+				.col-md-3
+					img(src='img/curtain-manufacture.png').image-responsive
+					h6 Curtain Manufacture
+					p Installation for Cinema, Schools, Public halls, Live theatre
+				.col-md-3
+					img(src='img/24-hours-support.png').image-responsive
+					h6 24 Hours Support
+					p Support for cinema digital installations
+				.col-md-3
+					img(src='img/routine-service.png').image-responsive
+					h6 Routine Service
+					p Maintenance service for all clients
+				.col-md-3
+					img(src='img/contact-us.png').image-responsive
+					h6 Get In Touch
+					p The team will be happy to discuss what we do and how we can help.
+	.featured-product
+		.container
+			.row
+				.col-md-12
+					.carousel.slick-slider
+						li
+							img(src='img/Featured-Product/PSD-3000-P-Portable-Storage-Device.jpg', alt='')
+						li
+							img(src='img/Featured-Product/NEC-NC900C-Digital-Cinema-Projector.jpg')
+						li
+							img(src='img/Featured-Product/NEC-NC1200-Digital-Cinema-Projector.jpg')
+						li
+							img(src='img/Featured-Product/Espedeo-3D-Polarized-System.jpg')
+						li
+							img(src='img/Featured-Product/JSD-60-Digital-Cinema-Processor.jpg')
+						li
+							img(src='img/Featured-Product/TMS-1000-Theatre-Management-System.jpg')
+						li
+							img(src='img/Featured-Product/SX-2000AR-Digital-Cinema-Server-with-Integrated-Media-Block.jpg')
+						li
+							img(src='img/Featured-Product/SX-3000-Standalone-Integrated-Media-Block.jpg')
+						.product-more.text-center
+							a.btn.hvr-fade.text-uppercase.font-bold(href='/products') View All Our Products
+
+
+			
 

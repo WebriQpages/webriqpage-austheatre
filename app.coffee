@@ -40,3 +40,5 @@ module.exports =
 
   jade:
     pretty: true
+    
+  live_reload: true
