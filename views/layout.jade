@@ -5,14 +5,14 @@ html
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="css/webriq-bootstrap-material-ui.min.css">
+		<link rel="stylesheet" href="css/slick.css">
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
 
 		<!-- Optional theme -->
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="/js/webriq-bootstrap-material-ui.min.js"></script>
-		<script src="/js/slick.js"></script>
+
 
 
 		meta(charset='utf8')
@@ -40,7 +40,7 @@ html
 			include includes/header
 
 		div.main-container
-			include includes/menu
+			block content
 
 		div.footer
 			include includes/footer
