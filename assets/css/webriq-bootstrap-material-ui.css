@@ -22405,7 +22405,7 @@ input.eq-ui-input[type="checkbox"].filled-in:disabled:checked + label:after {
       -ms-user-select: none;
           user-select: none;
   display: block;
-  padding: 0 16px;
+  padding: 0px 16px;
   line-height: inherit;
   text-decoration: none;
   color: inherit;
