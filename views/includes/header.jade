@@ -12,20 +12,36 @@ nav(class='navbar')
 			#bs-example-navbar-collapse-1.collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
 					li
-						a(href='/')
-							| HOME
+						if _path == "/index.html"
+							a(href='/index').active
+								| HOME
+						else
+							a(href='/index')
+								| HOME						
 					li
-						a(href='/about-us')
-							| ABOUT
-					li
-						a(href='/livetheatre')
-							| LIVETHEATRE
+						if _path == "/about-us.html"
+							a(href='/about-us').active
+								| ABOUT
+						else
+							a(href='/about-us')
+								| ABOUT
+					li 
+						if _path == "/livetheatre.html"
+							a(href='/livetheatre').active
+								| LIVETHEATRE
+						else
+							a(href='/livetheatre')
+								| LIVETHEATRE
 					li
 						a(href='#')
 							| PRODUCTS
 					li
-						a(href='#')
-							| GALLERY
+						if _path == "/gallery.html"
+							a(href='/gallery').active
+								| GALLERY
+						else
+							a(href='/gallery')
+								| GALLERY		
 					li
 						a(href='#')
 							| CONTACT
