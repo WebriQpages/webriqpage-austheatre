@@ -4,7 +4,7 @@
 			.col-md-4.col-sm-4.col-xs-12
 				h4 About
 				p Australian Theatre Supplies is a Queensland based company servicing the needs of cinema and live theatre throughout Australia.
-			.col-md-2.col-sm-3.col-xs-4
+			.col-md-2.col-sm-3.col-xs-12
 				h4 Austheatre
 				ul
 					li
@@ -19,7 +19,7 @@
 						a(href='#') Gallery
 					li
 						a(href='#') Contact
-			.col-md-2.col-sm-3.col-xs-4.contact
+			.col-md-2.col-sm-3.col-xs-12.contact
 				h4 Contact
 				ul
 					li
@@ -29,8 +29,8 @@
 				h4 Email
 				ul
 					li
-						a( $white href='mailto:info@austheatre.com.au') info@austheatre.com.au
-			.col-md-2.col-sm-3.col-xs-4
+						a(href='mailto:info@austheatre.com.au').email info@austheatre.com.au
+			.col-md-2.col-sm-3.col-xs-12
 				h4 Location
 				p Unit 4, 42 Paisley Drive, Lawnton QLD 4501
 #footer
@@ -53,10 +53,17 @@ script(src="/js/webriq-bootstrap-material-ui.min.js")
 script(type="text/javascript" src="../js/lightbox-2.6.min.js")
 script(type="text/javascript" src="js/slick.min.js")
 script(type="text/javascript" src="js/custom.js")
+script(type="text/javascript" src="js/lightgallery.js")
 script(type="text/javascript" src="https://use.fontawesome.com/0ca9436bb1.js")
 
 
 <!-- Google Analytics -->
 script(type="text/javascript")
 	!= records.site.sitedata[0].analytics
+script.
+	$(document).ready(function() {
+		$("#lightGallery").lightGallery();
+	});
+
+
 
