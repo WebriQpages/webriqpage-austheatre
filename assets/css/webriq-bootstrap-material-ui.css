@@ -22356,6 +22356,7 @@ input.eq-ui-input[type="checkbox"].filled-in:disabled:checked + label:after {
 .eq-ui-side-nav nav .eq-ui-search {
   margin: 0 10px 16px 10px;
   padding-right: 6px;
+
 }
 
 .eq-ui-side-nav nav .eq-ui-search .autocomplete-suggestions {
@@ -22376,13 +22377,13 @@ input.eq-ui-input[type="checkbox"].filled-in:disabled:checked + label:after {
   top: 0;
 }
 
-.eq-ui-collapsible {
+//*.eq-ui-collapsible {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   margin-bottom: 24px;
   padding: 0;
-}
+} *//
 
 .eq-ui-collapsible li {
   display: block;
