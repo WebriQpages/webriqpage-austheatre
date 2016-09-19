@@ -33,8 +33,12 @@ nav(class='navbar')
 							a(href='/livetheatre')
 								| LIVETHEATRE
 					li
-						a(href='products')
-							| PRODUCTS
+						if _path == "/products.html"
+							a(href='/products').active
+								| PRODUCTS
+						else
+							a(href='/products')
+								| PRODUCTS
 					li
 						if _path == "/gallery.html"
 							a(href='/gallery').active
@@ -43,7 +47,12 @@ nav(class='navbar')
 							a(href='/gallery')
 								| GALLERY		
 					li
-						a(href='contact')
-							| CONTACT
+						if _path == "/contact.html"
+							a(href='/contact').active
+								| CONTACT
+						else
+							a(href='/contact')
+								| CONTACT
+
 
 if _path == "/index.html"
