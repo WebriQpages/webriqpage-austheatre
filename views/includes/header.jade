@@ -1,3 +1,20 @@
+.contact-address
+	.container
+		.row
+			.col-md-6.col-sm-6.col-xs-12
+				a.navbar-brand(href='/index')
+					img(src='img/logo2.png').img-responsive
+			.col-md-6.col-sm-6.col-xs-12.text-right.padding-right.contact
+				ul
+					li
+						i.fa.fa-envelope(aria-hidden='true')
+						a(href='info@austheatre.com.au', target='_top')  info@austheatre.com.au
+					li
+						i.fa.fa-map-marker(aria-hidden='true')
+						addr Unit 4, 42 Paisley Drive, Lawnton QLD 4501
+					li
+						i.fa.fa-phone(aria-hidden='true')
+						addr 07 3285 6311 - Office
 nav(class='navbar')
 	.container
 		.row
@@ -7,8 +24,6 @@ nav(class='navbar')
 					span.icon-bar
 					span.icon-bar
 					span.icon-bar
-				a.navbar-brand(href='/index')
-					img(src='img/logo.png').img-responsive
 			#bs-example-navbar-collapse-1.collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right
 					li
@@ -17,7 +32,7 @@ nav(class='navbar')
 								| HOME
 						else
 							a(href='/index')
-								| HOME						
+								| HOME
 					li
 						if _path == "/about-us.html"
 							a(href='/about-us').active
@@ -25,7 +40,7 @@ nav(class='navbar')
 						else
 							a(href='/about-us')
 								| ABOUT
-					li 
+					li
 						if _path == "/livetheatre.html"
 							a(href='/livetheatre').active
 								| LIVETHEATRE
@@ -45,7 +60,7 @@ nav(class='navbar')
 								| GALLERY
 						else
 							a(href='/gallery')
-								| GALLERY		
+								| GALLERY
 					li
 						if _path == "/contact.html"
 							a(href='/contact').active
