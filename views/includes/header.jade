@@ -1,20 +1,22 @@
 .contact-address
 	.container
 		.row
-			.col-md-6.col-sm-6.col-xs-12
-				a.navbar-brand(href='/index')
-					img(src='img/logo.png').img-responsive
-			.col-md-6.col-sm-6.col-xs-12.text-right.padding-right.contact
-				ul
-					li
-						i.fa.fa-envelope(aria-hidden='true')
-						a(href='info@austheatre.com.au', target='_top')  info@austheatre.com.au
-					li
-						i.fa.fa-map-marker(aria-hidden='true')
-						addr Unit 4, 42 Paisley Drive, Lawnton QLD 4501
-					li
-						i.fa.fa-phone(aria-hidden='true')
-						addr 07 3285 6311 - Office
+			.col-md-6.col-sm-12.col-xs-12
+				#navbar-img
+					a.navbar-brand(href='/index')
+						img(src='img/logo.png')
+			#contact-info
+				.col-md-6.col-sm-12.col-xs-12.text-right.padding-right.contact
+					ul
+						li
+							i.fa.fa-envelope(aria-hidden='true')
+							a(href='info@austheatre.com.au', target='_top')  info@austheatre.com.au
+						li
+							i.fa.fa-map-marker(aria-hidden='true')
+							addr Unit 4, 42 Paisley Drive, Lawnton QLD 4501
+						li
+							i.fa.fa-phone(aria-hidden='true')
+							addr 07 3285 6311 - Office
 nav(class='navbar')
 	.container
 		.row
